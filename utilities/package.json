@@ -1,0 +1,17 @@
+{
+    "name": "utilities",
+    "version": "1.0.0",
+    "description": "Utility Package",
+    "scripts": {},
+    "author": "",
+    "license": "UNLICENSED",
+    "engines": {
+        "node": "14.x"
+    },
+    "private": true,
+    "dependencies": {
+        "@sap/cds": "^5.7.4",
+        "@sap/edm-converters": "^1.0.41",
+        "soap": "^0.43.0"
+    }
+}

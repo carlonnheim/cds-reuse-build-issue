@@ -1,0 +1,38 @@
+{
+    "name": "module-b",
+    "version": "1.0.0",
+    "description": "Module B",
+    "repository": "<Add your repository here>",
+    "license": "UNLICENSED",
+    "engines": {
+        "node": "14.x"
+    },
+    "private": true,
+    "dependencies": {
+        "@sap/cds": "^5.7.4",
+        "@sap/edm-converters": "^1.0.41",
+        "@sap/hana-client": "^2.11.14",
+        "@sap/xb-msg-amqp-v100": "^0.9.58",
+        "module-a": "file:../module-a",
+        "utilities": "file:../utilities",
+        "express": "^4",
+        "lodash": "^4.17.21",
+        "passport": "^0.4.1",
+        "passport-http": "^0.3.0",
+        "soap": "^0.42.0"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "start": "cds run"
+    },
+    "cds": {
+        "requires": {
+            "db": {
+                "kind": "hana"
+            }
+        },
+        "hana": {
+            "deploy-format": "hdbtable"
+        }
+    }
+}
